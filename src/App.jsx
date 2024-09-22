@@ -12,6 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Sidebar from "./components/Sidebar";
 import AddNewAdmin from "./components/AddNewAdmin";
 import "./App.css";
+axios.defaults.withCredentials = true;
 
 const App = () => {
   const { isAuthenticated, setIsAuthenticated, admin, setAdmin } =
